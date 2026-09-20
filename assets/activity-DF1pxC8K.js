@@ -1,0 +1,1 @@
+import{n as e}from"./supabaseClient-CBKa9MP8.js";import"./supabase-DTL4w4zp.js";async function t(t,n,r=`general`,i=null,a=null,o={}){let{data:{user:s}}=await e.auth.getUser();s&&await e.from(`task_activity`).insert({task_id:t,user_id:s.id,action_type:r,action_text:n,old_value:i,new_value:a,metadata:o})}export{t};
